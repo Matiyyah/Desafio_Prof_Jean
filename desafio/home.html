@@ -12,6 +12,7 @@
             display: flex;
             flex-direction: column; /* Alinha os itens em coluna */
             align-items: center; /* Centraliza os itens horizontalmente */
+            min-height: 100vh; /* Define altura mínima da tela */
         }
         .header {
             display: flex;
@@ -60,12 +61,21 @@
             max-width: 800px; /* Largura máxima do texto */
             margin: 10px 0;
         }
+        .footer {
+            background-color: #f8f9fa;
+            width: 100%; /* Faz o rodapé ocupar toda a largura */
+            text-align: center; /* Centraliza o texto */
+            padding: 10px 0; /* Espaçamento interno */
+            border-top: 1px solid #ccc; /* Borda superior */
+            position: relative;
+            bottom: 0; /* Fixa o rodapé na parte inferior */
+        }
     </style>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <img src="imagens\logo.png" alt="logo do site">
+            <img src="imagens/logo.png" alt="logo do site">
         </div>
         <ul class="nav-links">
             <li><a href="home.html">Home</a></li>
@@ -75,21 +85,25 @@
     </header>
 
     <div class="image-container">
-        <img src="imagens\capa.png" alt="capa">
+        <img src="imagens/capa.png" alt="capa">
     </div>
 
     <div class="text-container">
         <h2>Sobre a universidade</h2>
-        <p>ELorem ipsum dolor sit amet: consectetur adipiscmg elit- Suspendisse sit amet mollis nisl- Aliquam sit amet diam ac quam digntssim lob0fiis
-            vel ac sapiens Proin placerat cursus risus_ Duis blandit varius hendrerit. Vivamus sed placerat turpisz vel viverra neque_ Dus at tempor
-            magna, sit amet gravida purus. Nulla facilisi. Vivamos accumsan risus vitae risus blandit venenatis. Sed sed nisl tempor, tincidunt elit sit
-            amet, facilisis neque. Donec rutrum mauris odio, gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac
-            nec lectus. Lorem tpsum dolor sit amet, consectetur adtpiscing elit. In vestibulum cursus elit, vitae placerat lectus laoreet a.</p>
-        <p>Lorem ipsum dolor sit amet: consectetur adipiscmg elit- Suspendlsse sit amet mollis nisl- Aliquam sit amet diam ac quam dignissim lob0fits
-            vel ac sapien- proin placerat cursus risus- Duis blandit varius hendrerit, Vivamus sed placerat turpis, vel viverra neque. Duis at tempor
+        <p>Lorem ipsum dolor sit amet: consectetur adipiscmg elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis
+            vel ac sapien. Proin placerat cursus risus. Duis blandit varius hendrerit. Vivamus sed placerat turpis, vel viverra neque. Duis at tempor
             magna, sit amet gravida purus. Nulla facilisi. Vivamus accumsan risus vitae risus blandit venenatis. Sed sed nisl tempor, tincidunt elit sit
-            amet- facilisis negue. Donec rutrum mauris odios gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac
-            nec lectus. Lorem Ipsum dolor sit amet, consectetur adipiscing elit- In vestibulum cursus elitz vitae placerat lectus laoreet a.</p>
+            amet, facilisis neque. Donec rutrum mauris odio, gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac
+            nec lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum cursus elit, vitae placerat lectus laoreet a.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis
+            vel ac sapien. Proin placerat cursus risus. Duis blandit varius hendrerit. Vivamus sed placerat turpis, vel viverra neque. Duis at tempor
+            magna, sit amet gravida purus. Nulla facilisi. Vivamus accumsan risus vitae risus blandit venenatis. Sed sed nisl tempor, tincidunt elit sit
+            amet, facilisis neque. Donec rutrum mauris odio, gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac
+            nec lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In vestibulum cursus elit, vitae placerat lectus laoreet a.</p>
     </div>
+
+    <footer class="footer">
+        &copy; 2024 - Todos os direitos reservados.
+    </footer>
 </body>
 </html>
