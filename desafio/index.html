@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cabeçalho com Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column; /* Alinha os itens em coluna */
+            align-items: center; /* Centraliza os itens horizontalmente */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between; /* Distribui espaço entre logo e links */
+            align-items: center; /* Centraliza verticalmente os itens */
+            padding: 10px 20px; /* Espaçamento interno */
+            background-color: #f8f9fa;
+            border-bottom: 1px solid #ccc;
+            width: 100%; /* Faz o cabeçalho ocupar toda a largura */
+            box-sizing: border-box; /* Inclui padding e border na largura total */
+        }
+        .logo {
+            display: flex; /* Torna a logo um container flexível */
+            align-items: center; /* Alinha a imagem dentro do container */
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo img {
+            height: 40px; /* Ajusta a altura da logo */
+            width: auto; /* Mantém a proporção da imagem */
+        }
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px; /* Espaçamento entre os links */
+            margin: 0; /* Remove qualquer margem adicional */
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold; /* Torna o texto mais visível */
+        }
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+        .image-container {
+            margin: 20px 0; /* Espaçamento acima e abaixo da imagem */
+            text-align: center; /* Centraliza a imagem no container */
+        }
+        .image-container img {
+            max-width: 100%; /* Ajusta a largura máxima da imagem */
+            height: auto; /* Mantém a proporção da imagem */
+            max-height: 600px; /* Define uma altura máxima para a imagem */
+        }
+        .text-container {
+            max-width: 800px; /* Largura máxima do texto */
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="imagens/logo.png" alt="logo do site">
+        </div>
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li> <!-- Link para a página Home -->
+            <li><a href="quem_somos.html">Quem Somos</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </header>
+
+    <div class="image-container">
+        <img src="imagens/capa.png" alt="capa">
+    </div>
+
+    <div class="text-container">
+        <h2>Sobre a universidade</h2>
+        <p>Lorem ipsum dolor sit amet: consectetur adipiscing elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis vel ac sapien. Proin placerat cursus risus. Duis blandit varius hendrerit. Vivamus sed placerat turpis vel viverra neque. Duis at tempor magna, sit amet gravida purus. Nulla facilisi. Vivamus accumsan risus vitae risus blandit venenatis. Sed sed nisl tempor, tincidunt elit sit amet, facilisis neque. Donec rutrum mauris odio, gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac nec lectus.</p>
+        <p>Lorem ipsum dolor sit amet: consectetur adipiscing elit. Suspendisse sit amet mollis nisl. Aliquam sit amet diam ac quam dignissim lobortis vel ac sapien. Proin placerat cursus risus. Duis blandit varius hendrerit. Vivamus sed placerat turpis vel viverra neque. Duis at tempor magna, sit amet gravida purus. Nulla facilisi. Vivamus accumsan risus vitae risus blandit venenatis. Sed sed nisl tempor, tincidunt elit sit amet, facilisis neque. Donec rutrum mauris odio, gravida vestibulum nulla cursus vitae. Cras vestibulum lectus sed augue viverra ultrices ac nec lectus.</p>
+    </div>
+</body>
+</html>
